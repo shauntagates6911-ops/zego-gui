@@ -8,9 +8,16 @@ export default class MockAudioEffects {
             FASTER: 'faster',
             SLOWER: 'slower',
             ECHO: 'echo'
+            PITCH: 'new pitch',
+            UNSOUND: 'delete this',
+            INSANE: 'insane amount of volume',
+            GIT: 'convert into .zip or .git',
+            SUPERSLOW: 'slow a lot',
+            INFECT: 'infect',
+            DOWNLOAD: '.mp3 pack'
         };
     }
-    constructor (buffer, name) {
+constructor (buffer, name) {
         this.buffer = buffer;
         this.name = name;
         this.process = jest.fn(done => {
